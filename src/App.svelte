@@ -9,7 +9,9 @@
   };
 
   const onfireQuery = (e) => {
-    queryTable = e.detail.table;
+    if (e.detail.table !== "Select Table") {
+      queryTable = e.detail.table;
+    }
   };
 </script>
 
